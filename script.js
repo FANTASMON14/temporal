@@ -110,7 +110,7 @@ function abrirModalAutor(autor) {
         <p>Nació el 16 de abril de 2008</p>
         <p>La Paz - Murillo</p>
         <p>17 años de edad</p>
-        <p>Tel: 63219040</p>
+        <p>63219040</p>
         <br>
         <div class="autor">
             <img src="Autor1.jpg" alt="Autor 1">
@@ -124,7 +124,7 @@ function abrirModalAutor(autor) {
         <p>Nació el 27 de marzo de 2008</p>
         <p>La Paz - Murillo</p>
         <p>17 años de edad</p>
-        <p>Tel: 77543336</p>
+        <p>77543336</p>
         <br>
         <div class="autor">
             <img src="Autor2.jpg" alt="Autor 2">

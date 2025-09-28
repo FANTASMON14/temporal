@@ -14,9 +14,13 @@ function abrirModal(seccion) {
           Existen diferentes tipos de contaminación:
           <ul>
             <li><b>Contaminación del aire:</b> gases tóxicos, humo de fábricas, automóviles.</li>
+            <img src="ContaminacionAire.jpeg" alt="Contaminación" style="width:100%; height:auto; margin: 10px 0;">
             <li><b>Contaminación del agua:</b> desechos industriales, plásticos y químicos en ríos y mares.</li>
+            <img src="ContaminacionAgua.jpg" alt="Contaminación" style="width:100%; height:auto; margin: 10px 0;">
             <li><b>Contaminación del suelo:</b> uso excesivo de pesticidas, basura y residuos sólidos.</li>
+            <img src="ContaminacionDelSuelo.jpg" alt="Contaminación" style="width:100%; height:auto; margin: 10px 0;">
             <li><b>Contaminación sonora:</b> ruidos excesivos que afectan la salud y bienestar.</li>
+            <img src="ContaminacionSonora.jpg" alt="Contaminación" style="width:100%; height:auto; margin: 10px 0;">
           </ul>
         </p>
       `;

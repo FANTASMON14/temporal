@@ -1,23 +1,23 @@
-
 function abrirVentana(seccion) {
   let contenido = "";
 
   switch (seccion) {
     case "que-es":
-      contenido = "<h2>¿Qué es la contaminación?</h2><p>Aquí puedes añadir información sobre qué significa la contaminación.</p>";
+      contenido = "<h2>¿Qué es la contaminación?</h2><p>La contaminación es la presencia de sustancias dañinas en el medio ambiente que afectan la salud y el equilibrio natural.</p>";
       break;
     case "detenerlo":
-      contenido = "<h2>¿Cómo podemos detenerlo?</h2><p>Aquí puedes añadir estrategias para frenar la contaminación.</p>";
+      contenido = "<h2>¿Cómo podemos detenerlo?</h2><p>Reduciendo plásticos, reciclando, usando energías limpias y educando a la población.</p>";
       break;
     case "cuidados":
-      contenido = "<h2>Cuidados para prevenir la contaminación</h2><p>Aquí puedes añadir consejos prácticos para prevenirla.</p>";
+      contenido = "<h2>Cuidados para prevenir la contaminación</h2><p>Evitar quemar basura, cuidar el agua, plantar árboles y usar transporte sostenible.</p>";
       break;
     default:
       contenido = "<p>No hay información disponible.</p>";
   }
 
-  // Abrir ventana emergente
-  const nuevaVentana = window.open("", "ventanaInfo", "width=500,height=400,scrollbars=yes");
+  // Abrir una ventana emergente segura
+  const nuevaVentana = window.open("", "_blank", "width=500,height=400,scrollbars=yes,resizable=yes");
+  nuevaVentana.document.open();
   nuevaVentana.document.write(`
     <!DOCTYPE html>
     <html lang="es">
@@ -34,4 +34,6 @@ function abrirVentana(seccion) {
     </body>
     </html>
   `);
+  nuevaVentana.document.close();
 }
+

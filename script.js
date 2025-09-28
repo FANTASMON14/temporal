@@ -30,3 +30,27 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function abrirModalAutor(autor) {
+  let contenido = "";
+
+  switch (autor) {
+    case "autor1":
+      contenido = `
+        <h2>Autor 1</h2>
+        <p>info 1</p>
+      `;
+      break;
+    case "autor2":
+      contenido = `
+        <h2>Autor 2</h2>
+        <p>info 2</p>
+      `;
+      break;
+    default:
+      contenido = "<p>No hay información disponible.</p>";
+  }
+
+  document.getElementById("modal-texto").innerHTML = contenido;
+  document.getElementById("modal").style.display = "block";
+}

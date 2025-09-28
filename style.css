@@ -89,6 +89,34 @@ footer {
   color: #f44336;
 }
 
+/* Autores */
+.autores {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.autor {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.autor img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.autor:hover {
+  transform: scale(1.1);
+}
+
 @keyframes aparecer {
   from {opacity: 0; transform: scale(0.8);}
   to {opacity: 1; transform: scale(1);}

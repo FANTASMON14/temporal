@@ -1,4 +1,4 @@
-function abrirVentana(seccion) {
+function abrirModal(seccion) {
   let contenido = "";
 
   switch (seccion) {
@@ -15,25 +15,18 @@ function abrirVentana(seccion) {
       contenido = "<p>No hay información disponible.</p>";
   }
 
-  // Abrir una ventana emergente segura
-  const nuevaVentana = window.open("", "_blank", "width=500,height=400,scrollbars=yes,resizable=yes");
-  nuevaVentana.document.open();
-  nuevaVentana.document.write(`
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-      <meta charset="UTF-8">
-      <title>${seccion}</title>
-      <style>
-        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
-        h2 { color: #1565c0; }
-      </style>
-    </head>
-    <body>
-      ${contenido}
-    </body>
-    </html>
-  `);
-  nuevaVentana.document.close();
+  document.getElementById("modal-texto").innerHTML = contenido;
+  document.getElementById("modal").style.display = "block";
 }
 
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// Cerrar modal si se hace clic fuera
+window.onclick = function(event) {
+  const modal = document.getElementById("modal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

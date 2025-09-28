@@ -11,31 +11,34 @@
     <h1>La Contaminación</h1>
   </header>
 
-  <main>
-    <section>
-      <h2 onclick="abrirVentana('que-es')">1. ¿Qué es la contaminación?</h2>
-      <p>Haz clic en el título para ver más información.</p>
+  <main class="contenedor">
+    <section onclick="abrirModal('que-es')">
+      <h2>1. ¿Qué es la contaminación?</h2>
     </section>
 
-    <section>
-      <h2 onclick="abrirVentana('detenerlo')">2. ¿Cómo podemos detenerlo?</h2>
-      <p>Haz clic en el título para ver más información.</p>
+    <section onclick="abrirModal('detenerlo')">
+      <h2>2. ¿Cómo podemos detenerlo?</h2>
     </section>
 
-    <section>
-      <h2 onclick="abrirVentana('cuidados')">3. Cuidados para prevenir la contaminación</h2>
-      <p>Haz clic en el título para ver más información.</p>
+    <section onclick="abrirModal('cuidados')">
+      <h2>3. Cuidados para prevenir la contaminación</h2>
     </section>
   </main>
 
   <footer>
     <h3>Biografía</h3>
-    <p>Autores: Equipo de investigación (pueden añadir sus nombres aquí).</p>
+    <p>Autores: Equipo de investigación</p>
     <p>Redacción: <em>(Aquí añadiremos la redacción luego)</em></p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <div id="modal-texto"></div>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
-

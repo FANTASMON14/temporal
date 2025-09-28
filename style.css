@@ -88,6 +88,80 @@ footer {
 .cerrar:hover {
   color: #f44336;
 }
+/* Modal fondo */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* fondo oscuro transparente */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenido del modal */
+.modal-contenido {
+  background-color: #111;
+  color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  font-family: "Arial", sans-serif;
+  line-height: 1.6; /* más espacio entre líneas */
+}
+
+/* Títulos dentro del modal */
+.modal-contenido h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+/* Párrafos */
+.modal-contenido p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Listas */
+.modal-contenido ul {
+  margin: 15px 0 15px 20px;
+  padding-left: 20px;
+}
+
+.modal-contenido li {
+  margin-bottom: 10px; /* más espacio entre puntos */
+  list-style-type: "✔ "; /* cambia los bullets por un check */
+  font-size: 1rem;
+}
+
+/* Botón de cierre */
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.cerrar:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+
+
 
 /* Autores */
 .autores {
@@ -105,8 +179,8 @@ footer {
 }
 
 .autor img {
-  width: 120px;
-  height: 120px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;

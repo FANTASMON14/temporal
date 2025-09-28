@@ -1,4 +1,4 @@
-/* General */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,6 @@ header h1 {
   color: #fff;
 }
 
-/* Secciones en columnas (PC) o filas (móvil) */
 .contenedor {
   display: flex;
   gap: 20px;
@@ -54,7 +53,6 @@ footer {
   text-align: center;
 }
 
-/* Modal fondo */
 .modal {
   display: none;
   position: fixed;
@@ -63,14 +61,13 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* fondo oscuro transparente */
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
   padding: 20px;
-  overflow: auto; /* Permite scroll si la pantalla es pequeña */
+  overflow: auto; 
 }
 
-/* Contenido del modal */
 .modal-contenido {
   background-color: #111;
   color: #fff;
@@ -78,11 +75,11 @@ footer {
   padding: 30px;
   max-width: 700px;
   width: 100%;
-  max-height: 80vh; /* Máximo 80% de la altura de la ventana */
-  overflow-y: auto; /* Barra de scroll vertical si el contenido es más grande */
+  max-height: 80vh; 
+  overflow-y: auto; 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   font-family: "Arial", sans-serif;
-  line-height: 1.6; /* más espacio entre líneas */
+  line-height: 1.6;
   position: relative;
 }
 
@@ -97,7 +94,7 @@ footer {
 .cerrar:hover {
   color: #f44336;
 }
-/* Modal fondo */
+
 .modal {
   display: none;
   position: fixed;
@@ -106,13 +103,12 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* fondo oscuro transparente */
+  background-color: rgba(0, 0, 0, 0.8); 
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-/* Contenido del modal */
 .modal-contenido {
   background-color: #111;
   color: #fff;
@@ -122,10 +118,9 @@ footer {
   width: 100%;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   font-family: "Arial", sans-serif;
-  line-height: 1.6; /* más espacio entre líneas */
+  line-height: 1.6;
 }
 
-/* Títulos dentro del modal */
 .modal-contenido h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -134,25 +129,22 @@ footer {
   padding-bottom: 10px;
 }
 
-/* Párrafos */
 .modal-contenido p {
   margin-bottom: 15px;
   font-size: 1rem;
 }
 
-/* Listas */
 .modal-contenido ul {
   margin: 15px 0 15px 20px;
   padding-left: 20px;
 }
 
 .modal-contenido li {
-  margin-bottom: 10px; /* más espacio entre puntos */
-  list-style-type: "✔ "; /* cambia los bullets por un check */
+  margin-bottom: 10px;
+  list-style-type: "✔ "; 
   font-size: 1rem;
 }
 
-/* Botón de cierre */
 .cerrar {
   position: absolute;
   top: 20px;
@@ -172,7 +164,9 @@ footer {
 
 
 
-/* Autores */
+
+
+
 .autores {
   display: flex;
   justify-content: center;
@@ -197,7 +191,6 @@ footer {
   transition: width 0.3s, height 0.3s;
 }
 
-/* En pantallas pequeñas (celulares) la imagen será grande */
 @media (max-width: 768px) {
   .autor img {
     width: 220px;

@@ -84,14 +84,13 @@ function abrirModal(seccion) {
   }
 
   document.getElementById("modal-texto").innerHTML = contenido;
-  document.getElementById("modal").style.display = "flex"; // 👈 centrado
+  document.getElementById("modal").style.display = "flex";
 }
 
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
 
-// Cerrar modal si se hace clic fuera
 window.onclick = function(event) {
   const modal = document.getElementById("modal");
   if (event.target == modal) {
@@ -136,5 +135,5 @@ function abrirModalAutor(autor) {
   }
 
   document.getElementById("modal-texto").innerHTML = contenido;
-  document.getElementById("modal").style.display = "flex"; // 👈 centrado
+  document.getElementById("modal").style.display = "flex";
 }
